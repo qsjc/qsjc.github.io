@@ -1,10 +1,10 @@
 language: go
 
 go:
-  - "1.8"  # 指定Golang 1.8
+  - "1.8" # 指定Golang 1.8
 
 # Specify which branches to build using a safelist
-# 分支白名单限制：只有 master 分支的提交才会触发构建
+# 分支白名单限制：只有 dev 分支的提交才会触发构建
 # branches:
 #   only:
 #     - dev
@@ -34,9 +34,9 @@ script:
 #   - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" main:main --tags
 
 env:
- global:
-   # Github Pages
-   - GH_REF: github.com/wangjun521/wangjun521.github.io.git
+  global:
+    # Github Pages
+    - GH_REF: github.com/qsjc/qsjc.github.io.git
 
 deploy:
   provider: pages # 重要，指定这是一份github pages的部署配置
