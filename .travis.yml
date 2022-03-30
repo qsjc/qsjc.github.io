@@ -1,7 +1,7 @@
 language: go
 
 go:
-  - "1.8" # 指定Golang 1.8
+ - "1.8" # 指定Golang 1.8
 
 # Specify which branches to build using a safelist
 # 分支白名单限制：只有 dev 分支的提交才会触发构建
@@ -10,15 +10,15 @@ go:
 #     - dev
 
 install:
-  # 安装最新的hugo
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-64bit.deb
-  - sudo dpkg -i hugo*.deb
-  # 安装主题
-  - git clone https://github.com/dillonzq/LoveIt.git
+ # 安装最新的hugo
+ - wget https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-64bit.deb
+ - sudo dpkg -i hugo*.deb
+ # 安装主题
+ - git clone https://github.com/olOwOlo/hugo-theme-even
 
 script:
-  # 运行hugo命令
-  - hugo
+ # 运行hugo命令
+ - hugo
 
 # after_script:
 #   # 部署
@@ -34,18 +34,18 @@ script:
 #   - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" main:main --tags
 
 env:
-  global:
-    # Github Pages
-    - GH_REF: github.com/qsjc/qsjc.github.io.git
+ global:
+  # Github Pages
+  - GH_REF: github.com/qsjc/qsjc.github.io.git
 
 deploy:
-  provider: pages # 重要，指定这是一份github pages的部署配置
-  skip_cleanup: true # 重要，不能省略
-  local_dir: public # 静态站点文件所在目录
-  target_branch: main # 要将静态站点文件发布到哪个分支
-  github_token: $GITHUB_TOKEN # 重要，$GITHUB_TOKEN是变量，需要在GitHub上申请、再到配置到Travis
-  # fqdn:  # 如果是自定义域名，此处要填
-  keep_history: false # 是否保持target-branch分支的提交记录
-  allow_empty_commit: true
-  on:
-    all_branches: true # 博客源码的分支
+ provider: pages # 重要，指定这是一份github pages的部署配置
+ skip_cleanup: true # 重要，不能省略
+ local_dir: public # 静态站点文件所在目录
+ target_branch: main # 要将静态站点文件发布到哪个分支
+ github_token: $GITHUB_TOKEN # 重要，$GITHUB_TOKEN是变量，需要在GitHub上申请、再到配置到Travis
+ # fqdn:  # 如果是自定义域名，此处要填
+ keep_history: false # 是否保持target-branch分支的提交记录
+ allow_empty_commit: true
+ on:
+  all_branches: true # 博客源码的分支
