@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>css的一些tips - 猫饼</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="qsjc" /><meta name="description" content="css 的部分 tips 消除 transition 闪屏 1 2 3 .css { transform: translate3d(0, 0, 0); } 全局背景图 1 2 3 4 html { background: url(&amp;#34;bg.jpg&amp;#34;) no-repeat center center fixed; background-size: cover; } 自定义文本选择 1 2 3 ::selection { background: red; } 使页面字体变细变清晰 1 -webkit-font-smoothing: antialiased; 长按" /><meta name="keywords" content="博客, 技术, 生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.83.1 with theme even" />
+
+
+<link rel="canonical" href="https://qsjc.github.io/post/2021/005/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+
+<link href="/sass/main.min.028acb6a30c6dbb1c1d86dfc8d7d1659d3e24ebfecbe66360c39b0375931eea5.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="css的一些tips" />
+<meta property="og:description" content="css 的部分 tips 消除 transition 闪屏 1 2 3 .css { transform: translate3d(0, 0, 0); } 全局背景图 1 2 3 4 html { background: url(&#34;bg.jpg&#34;) no-repeat center center fixed; background-size: cover; } 自定义文本选择 1 2 3 ::selection { background: red; } 使页面字体变细变清晰 1 -webkit-font-smoothing: antialiased; 长按" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://qsjc.github.io/post/2021/005/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-03-12T13:31:43&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-12T13:31:43&#43;08:00" />
+
+<meta itemprop="name" content="css的一些tips">
+<meta itemprop="description" content="css 的部分 tips 消除 transition 闪屏 1 2 3 .css { transform: translate3d(0, 0, 0); } 全局背景图 1 2 3 4 html { background: url(&#34;bg.jpg&#34;) no-repeat center center fixed; background-size: cover; } 自定义文本选择 1 2 3 ::selection { background: red; } 使页面字体变细变清晰 1 -webkit-font-smoothing: antialiased; 长按"><meta itemprop="datePublished" content="2021-03-12T13:31:43&#43;08:00" />
+<meta itemprop="dateModified" content="2021-03-12T13:31:43&#43;08:00" />
+<meta itemprop="wordCount" content="669">
+<meta itemprop="keywords" content="css,前端," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="css的一些tips"/>
+<meta name="twitter:description" content="css 的部分 tips 消除 transition 闪屏 1 2 3 .css { transform: translate3d(0, 0, 0); } 全局背景图 1 2 3 4 html { background: url(&#34;bg.jpg&#34;) no-repeat center center fixed; background-size: cover; } 自定义文本选择 1 2 3 ::selection { background: red; } 使页面字体变细变清晰 1 -webkit-font-smoothing: antialiased; 长按"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">猫饼</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">猫饼<span style="font-size: 14px; margin-left: 16px;">一个人的碎碎念鸭</i>
+  </a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">css的一些tips</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-03-12 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%89%8D%E7%AB%AF/"> 前端 </a>
+            </div>
+          <span class="more-meta"> 约 669 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#css-的部分-tips">css 的部分 tips</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+  <div class="post-outdated">
+    <div class="warn">
+      <p>【注意】最后更新于 <span class="timeago" datetime="2021-03-12T13:31:43" title="March 12, 2021">March 12, 2021</span>，文中内容可能已过时，请谨慎使用。</p>
+    </div>
+  </div>
+    <div class="post-content">
+      <h3 id="css-的部分-tips">css 的部分 tips</h3>
+<ol>
+<li>消除 transition 闪屏</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">css</span> <span class="p">{</span>
+	<span class="k">transform</span><span class="p">:</span> <span class="nb">translate3d</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>全局背景图</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">html</span> <span class="p">{</span>
+	<span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;bg.jpg&#34;</span><span class="p">)</span> <span class="kc">no-repeat</span> <span class="kc">center</span> <span class="kc">center</span> <span class="kc">fixed</span><span class="p">;</span>
+	<span class="k">background-size</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>自定义文本选择</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">::</span><span class="nd">selection</span> <span class="p">{</span>
+	<span class="k">background</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>使页面字体变细变清晰</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">-webkit-font-smoothing</span><span class="o">:</span> <span class="nt">antialiased</span><span class="o">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>长按禁止</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="o">//</span> <span class="nt">禁止长按图片保存</span>
+<span class="nt">img</span> <span class="p">{</span>
+	<span class="kp">-webkit-</span><span class="n">touch-callout</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+	<span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> <span class="err">//</span> <span class="err">像微信浏览器还是无法禁止，加上这行样式即可</span>
+<span class="p">}</span>
+<span class="o">//</span> <span class="nt">禁止长按选择文字</span>
+<span class="nt">div</span> <span class="p">{</span>
+	<span class="kp">-webkit-</span><span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">//</span> <span class="nt">禁止长按呼出菜单</span>
+<span class="nt">div</span> <span class="p">{</span>
+	<span class="kp">-webkit-</span><span class="n">touch-callout</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="6">
+<li>修改谷歌浏览器记住密码后的自动填充表单背景色</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">input</span><span class="p">:</span><span class="nd">-webkit-autofill</span><span class="o">,</span>
+<span class="nt">textarea</span><span class="p">:</span><span class="nd">-webkit-autofill</span><span class="o">,</span>
+<span class="nt">select</span><span class="p">:</span><span class="nd">-webkit-autofill</span> <span class="p">{</span>
+	<span class="k">background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">189</span><span class="p">);</span> <span class="c">/* #FAFFBD; */</span>
+	<span class="k">background-image</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+	<span class="k">color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="7">
+<li>文本两端对齐</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
+	<span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">background</span><span class="p">:</span> <span class="kc">pink</span><span class="p">;</span>
+	<span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">text-align-last</span><span class="p">:</span> <span class="kc">justify</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="8">
+<li>图片显示方式</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">img</span> <span class="p">{</span>
+	<span class="c">/* fill | contain | cover | none | scale-down */</span>
+	<span class="k">object-fit</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="9">
+<li>修改滚动条样式</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">div</span><span class="p">::</span><span class="nd">-webkit-scrollbar</span> <span class="p">{</span>
+	<span class="c">/* 这里的宽是指竖向滚动条的宽，高是指横向滚动条的高*/</span>
+	<span class="k">width</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">height</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">background</span><span class="p">:</span> <span class="kc">pink</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="p">::</span><span class="nd">-webkit-scrollbar-thumb</span> <span class="p">{</span>
+	<span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">background</span><span class="p">:</span> <span class="nb">linear-gradient</span><span class="p">(</span><span class="kc">red</span><span class="p">,</span> <span class="kc">orange</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="10">
+<li>sass 内深度选择器未生效</li>
+</ol>
+<p>尝试以下三种方式</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/deep/
+&gt;&gt;&gt;
+::v-deep
+</code></pre></td></tr></table>
+</div>
+</div><ol start="11">
+<li>1px 线</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">clear-fix</span> <span class="p">{</span>
+	<span class="err">&amp;::after</span> <span class="err">{</span>
+		<span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+		<span class="k">display</span><span class="p">:</span> <span class="kc">table</span><span class="p">;</span>
+		<span class="k">clear</span><span class="p">:</span> <span class="kc">both</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="err">}</span>
+
+<span class="p">.</span><span class="nc">border-top-1px</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">border-right-1px</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">border-bottom-1px</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">border-left-1px</span> <span class="p">{</span>
+	<span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+
+	<span class="err">&amp;::before,</span>
+	<span class="err">&amp;::after</span> <span class="err">{</span>
+		<span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+		<span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+		<span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+		<span class="k">transform-origin</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="err">}</span>
+
+<span class="o">$</span><span class="nt">color-row-line</span><span class="o">:</span> <span class="p">#</span><span class="nn">ebebeb</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">color-col-line</span><span class="o">:</span> <span class="p">#</span><span class="nn">ebebeb</span><span class="o">;</span>
+
+<span class="p">.</span><span class="nc">border-top-1px</span> <span class="p">{</span>
+	<span class="err">&amp;::before</span> <span class="err">{</span>
+		<span class="k">border-top</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="err">$</span><span class="kc">color</span><span class="o">-</span><span class="kc">row</span><span class="o">-</span><span class="n">line</span><span class="p">;</span>
+		<span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+		<span class="k">transform-origin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">top</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="err">}</span>
+
+<span class="p">.</span><span class="nc">border-right-1px</span> <span class="p">{</span>
+	<span class="err">&amp;::after</span> <span class="err">{</span>
+		<span class="k">border-right</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="err">$</span><span class="kc">color</span><span class="o">-</span><span class="n">col-line</span><span class="p">;</span>
+		<span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+		<span class="k">transform-origin</span><span class="p">:</span> <span class="kc">right</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="err">}</span>
+
+<span class="p">.</span><span class="nc">border-bottom-1px</span> <span class="p">{</span>
+	<span class="err">&amp;::after</span> <span class="err">{</span>
+		<span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="err">$</span><span class="kc">color</span><span class="o">-</span><span class="kc">row</span><span class="o">-</span><span class="n">line</span><span class="p">;</span>
+		<span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+		<span class="k">transform-origin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">bottom</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="err">}</span>
+
+<span class="p">.</span><span class="nc">border-left-1px</span> <span class="p">{</span>
+	<span class="err">&amp;::before</span> <span class="err">{</span>
+		<span class="k">border-left</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="err">$</span><span class="kc">color</span><span class="o">-</span><span class="n">col-line</span><span class="p">;</span>
+		<span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+		<span class="k">transform-origin</span><span class="p">:</span> <span class="kc">left</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="err">}</span>
+
+<span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-resolution</span><span class="o">:</span> <span class="nt">2dppx</span><span class="o">)</span> <span class="p">{</span>
+	<span class="p">.</span><span class="nc">border-top-1px</span> <span class="p">{</span>
+		<span class="err">&amp;::before</span> <span class="err">{</span>
+			<span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">%</span><span class="p">;</span>
+			<span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="p">.</span><span class="nc">border-right-1px</span> <span class="p">{</span>
+		<span class="err">&amp;::after</span> <span class="err">{</span>
+			<span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">%</span><span class="p">;</span>
+			<span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="err">}</span>
+	<span class="p">.</span><span class="nc">border-bottom-1px</span> <span class="p">{</span>
+		<span class="err">&amp;::after</span> <span class="err">{</span>
+			<span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">%</span><span class="p">;</span>
+			<span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="err">}</span>
+	<span class="p">.</span><span class="nc">border-left-1px</span> <span class="p">{</span>
+		<span class="err">&amp;::before</span> <span class="err">{</span>
+			<span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">%</span><span class="p">;</span>
+			<span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="err">}</span>
+<span class="err">}</span>
+
+<span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-resolution</span><span class="o">:</span> <span class="nt">3dppx</span><span class="o">)</span> <span class="p">{</span>
+	<span class="p">.</span><span class="nc">border-top-1px</span> <span class="p">{</span>
+		<span class="err">&amp;::before</span> <span class="err">{</span>
+			<span class="k">width</span><span class="p">:</span> <span class="mi">300</span><span class="kt">%</span><span class="p">;</span>
+			<span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">0.333</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="p">.</span><span class="nc">border-right-1px</span> <span class="p">{</span>
+		<span class="err">&amp;::after</span> <span class="err">{</span>
+			<span class="k">height</span><span class="p">:</span> <span class="mi">300</span><span class="kt">%</span><span class="p">;</span>
+			<span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">0.333</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="err">}</span>
+	<span class="p">.</span><span class="nc">border-bottom-1px</span> <span class="p">{</span>
+		<span class="err">&amp;::after</span> <span class="err">{</span>
+			<span class="k">width</span><span class="p">:</span> <span class="mi">300</span><span class="kt">%</span><span class="p">;</span>
+			<span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">0.333</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="err">}</span>
+	<span class="p">.</span><span class="nc">border-left-1px</span> <span class="p">{</span>
+		<span class="err">&amp;::before</span> <span class="err">{</span>
+			<span class="k">height</span><span class="p">:</span> <span class="mi">300</span><span class="kt">%</span><span class="p">;</span>
+			<span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">0.333</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="err">}</span>
+<span class="err">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">qsjc</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-03-12
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/css/">css</a>
+          <a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/2021/001/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">js的一些tips</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2021-03-12 13:31:43 \u002b0800 \u002b0800',
+        title: 'css的一些tips',
+        clientID: '8a2eee0576ce107588f1',
+        clientSecret: '37209f0bb49e03718d307a6d6f8a4f1c37a33d2c',
+        repo: 'qsjc.github.io',
+        owner: 'qsjc',
+        admin: ['qsjc'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/qsjc" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/317483876" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://qsjc.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>qsjc</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh-CN".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

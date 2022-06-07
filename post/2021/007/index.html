@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Html5的meta标签 - 猫饼</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="qsjc" /><meta name="description" content="http-equiv meta标签上的http-equiv属性与http头部信息相关，而且是响应头，因为html本质上是通过服务器响应得到的。http-equi" /><meta name="keywords" content="博客, 技术, 生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.83.1 with theme even" />
+
+
+<link rel="canonical" href="https://qsjc.github.io/post/2021/007/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+
+<link href="/sass/main.min.028acb6a30c6dbb1c1d86dfc8d7d1659d3e24ebfecbe66360c39b0375931eea5.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Html5的meta标签" />
+<meta property="og:description" content="http-equiv meta标签上的http-equiv属性与http头部信息相关，而且是响应头，因为html本质上是通过服务器响应得到的。http-equi" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://qsjc.github.io/post/2021/007/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-11-08T16:03:36&#43;08:00" />
+<meta property="article:modified_time" content="2021-11-08T16:03:36&#43;08:00" />
+
+<meta itemprop="name" content="Html5的meta标签">
+<meta itemprop="description" content="http-equiv meta标签上的http-equiv属性与http头部信息相关，而且是响应头，因为html本质上是通过服务器响应得到的。http-equi"><meta itemprop="datePublished" content="2021-11-08T16:03:36&#43;08:00" />
+<meta itemprop="dateModified" content="2021-11-08T16:03:36&#43;08:00" />
+<meta itemprop="wordCount" content="1851">
+<meta itemprop="keywords" content="前端," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Html5的meta标签"/>
+<meta name="twitter:description" content="http-equiv meta标签上的http-equiv属性与http头部信息相关，而且是响应头，因为html本质上是通过服务器响应得到的。http-equi"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">猫饼</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">猫饼<span style="font-size: 14px; margin-left: 16px;">一个人的碎碎念鸭</i>
+  </a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Html5的meta标签</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-11-08 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%89%8D%E7%AB%AF/"> 前端 </a>
+            </div>
+          <span class="more-meta"> 约 1851 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#http-equiv">http-equiv</a></li>
+            <li><a href="#其他">其他</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+  <div class="post-outdated">
+    <div class="warn">
+      <p>【注意】最后更新于 <span class="timeago" datetime="2021-11-08T16:03:36" title="November 8, 2021">November 8, 2021</span>，文中内容可能已过时，请谨慎使用。</p>
+    </div>
+  </div>
+    <div class="post-content">
+      <h3 id="http-equiv">http-equiv</h3>
+<blockquote>
+<p>meta标签上的http-equiv属性与http头部信息相关，而且是响应头，因为html本质上是通过服务器响应得到的。http-equiv用于伪装 HTTP 响应头部信息</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>值<div style="width: 140px;"></div></th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cache-control</td>
+<td>控制文档的缓存机制。允许的值如下：public：所有内容都将被缓存(客户端和代理服务器都可缓存)；private：内容只缓存到私有缓存中(仅客户端可以缓存，代理服务器不可缓存)；no-cache：不缓存，前提是通过服务器的缓存验证机制，如过期，内容改变等校验规则；no-store：所有内容都不会被缓存到缓存或 Internet 临时文件中</td>
+</tr>
+<tr>
+<td>content-language</td>
+<td>响应体的语言。如zh-CN, en-US等</td>
+</tr>
+<tr>
+<td>content-type</td>
+<td>返回内容的MIME类型</td>
+</tr>
+<tr>
+<td>date</td>
+<td>原始服务器消息发出的时间，GMT时间格式</td>
+</tr>
+<tr>
+<td>expires</td>
+<td>响应过期的日期和时间，GMT时间格式<meta http-equiv="expires" content="Fri, 30 Dec 2011 12:00:00 GMT"></td>
+</tr>
+<tr>
+<td>last-modified</td>
+<td>请求资源的最后修改时间，GMT时间格式</td>
+</tr>
+<tr>
+<td>location</td>
+<td>用来重定向接收方到非请求URL的位置来完成请求或标识新的资源</td>
+</tr>
+<tr>
+<td>refresh</td>
+<td>定义间隔多久后刷新页面。单位是秒</td>
+</tr>
+<tr>
+<td>set-cookie</td>
+<td>创建一个 cookie ，包含 cookie 名，cookie 值，过期时间</td>
+</tr>
+<tr>
+<td>window-target</td>
+<td>用来防止别人在框架里调用自己的页面。<meta http-equiv="Window-target" content="_top"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="其他">其他</h3>
+<ol>
+<li>指定字符编码</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>IE 杀手</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="c">&lt;!-- renderer适用于国产双内核浏览器 --&gt;</span>
+  <span class="c">&lt;!-- 使用Blink（Webkit） --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;renderer&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;webkit&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- IE兼容模式，使用ie低版本兼容 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;renderer&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;ie-comp&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- IE标准模式，使用ie高版本兼容 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;renderer&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;ie-stand&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- force-rendering适用于其他双内核浏览器 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;force-rendering&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;webkit&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- 强化对IE的兼容性，强制IE使用最新版标准模式渲染或者使用Chrome Frame渲染 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&#34;X-UA-Compatible&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;IE=edge,chrome=1&#34;</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>viewport常见设置，一般适用于移动端。视口宽度设为理想宽度，禁止缩放</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&#34;</span><span class="p">/&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>meta 三剑客</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;description&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;Tusi博客,专注大前端技术架构与分享,关注用户体验&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;keyword&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;Tusi博客,web前端,nodejs全栈,响应式,用户体验&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;author&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;Tusi&#34;</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>UC浏览器私有meta</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="c">&lt;!-- 横屏/竖屏 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;screen-orientation&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;landscape|portrait&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- 全屏 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;full-screen&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;yes&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- 缩放不出滚动条 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;uc-fitscreen=yes|no&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- 排版，fitscreen简化页面，适合阅读省流量，standard模式和标准浏览器一致 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;layoutmode&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;fitscreen|standard&#34;</span>
+  <span class="err">&lt;!</span><span class="na">--</span> <span class="na">夜间模式的启用和禁用</span> <span class="na">--</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nightmode&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;enable|disable&#34;</span><span class="p">/&gt;</span>
+  <span class="c">&lt;!-- 强制图片显示 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;imagemode&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;force&#34;</span><span class="p">/&gt;</span>
+  <span class="c">&lt;!-- 强制图片显示，只作用于单图 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">show</span><span class="o">=</span><span class="s">&#34;force&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- 应用模式,默认全屏，禁止长按菜单，禁止手势，标准排版，以及强制图片显示。 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;browsermode&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;application&#34;</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="6">
+<li>QQ浏览器X5内核私有meta（现在微信内置浏览器的内核也是X5哦</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="c">&lt;!-- 横屏/竖屏 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;x5-orientation&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;landscape|portrait&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- 全屏 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;x5-fullscreen&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- 应用模式 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;x5-page-mode&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="7">
+<li>iphone适配</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="c">&lt;!-- &#34;添加到主屏幕“后，全屏显示 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;apple-touch-fullscreen&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;yes&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- 隐藏菜单栏和状态栏，类似于应用模式 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;apple-mobile-web-app-capable&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;yes|no&#34;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- 设置状态栏颜色，貌似只有default白色，black黑色，black-translucent灰色半透明 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">”apple-mobile-web-app-status-bar-style”</span> <span class="na">content</span><span class="o">=</span><span class="s">black”</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- 取消电话号码识别，防止误触拨号 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;format-detection&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;telephone=no&#34;</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="8">
+<li>其他优化和适配手段</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="c">&lt;!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;HandheldFriendly&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>
+
+  <span class="c">&lt;!-- 微软的老式浏览器 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;MobileOptimized&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;320&#34;</span><span class="p">&gt;</span>
+
+  <span class="c">&lt;!-- windows phone 点击无高光 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;msapplication-tap-highlight&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;no&#34;</span><span class="p">&gt;</span>
+
+  <span class="c">&lt;!-- robots 用来告诉搜索机器人哪些页面需要被检索 --&gt;</span>
+  <span class="c">&lt;!-- index 搜索引擎抓取这个页面 --&gt;</span>
+  <span class="c">&lt;!-- noindex 搜索引擎不抓取这个页面 --&gt;</span>
+  <span class="c">&lt;!-- follow 抓取外链 --&gt;</span>
+  <span class="c">&lt;!-- nofollow 不抓取外链 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;robots&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;index,follow&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;robots&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;index,nofollow&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;robots&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;noindex,follow&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;robots&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;noindex,nofollow&#34;</span><span class="p">&gt;</span>
+
+  <span class="c">&lt;!-- referrer 控制http请求头的referer，暂时没想到什么实际应用场景 --&gt;</span>
+  <span class="c">&lt;!-- no-referrer 不发referer --&gt;</span>
+  <span class="c">&lt;!-- origin 只发送origin部分 --&gt;</span>
+  <span class="c">&lt;!-- no-referrer-when-downgrade 默认值，当目的地是先验安全的(https-&gt;https)则发送origin作为 referrer，但是当目的地是较不安全的(https-&gt;http)时则不发送referrer --&gt;</span>。
+  <span class="c">&lt;!-- origin-when-crossorigin 在同源请求下，发送完整的URL(不含查询参数)，其他情况下则仅发送当前文档的origin --&gt;</span>
+  <span class="c">&lt;!-- unsafe-URL 在同源请求下，发送完整的URL(不含查询参数) --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;referrer&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;no-referrer&#34;</span><span class="p">&gt;</span>
+
+  <span class="c">&lt;!-- og: Open Graph Protocol，一种友好的配置，让自己的网站在社交网络分享中更得心应手，更多的配置可以去自行搜索 --&gt;</span>
+  <span class="c">&lt;!-- og:type 告诉SNS，我这是一个什么类型的网站 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&#34;og:type&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;article&#34;</span><span class="p">/&gt;</span>
+  <span class="c">&lt;!-- og:title 告诉SNS，分享时告诉用户我这个网站的标题是什么，别自己瞎搞个标题 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&#34;og:title&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;Tusi博客&#34;</span><span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&#34;og:url&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;https://blog.wbjiang.cn&#34;</span><span class="p">/&gt;</span>
+  <span class="c">&lt;!-- og:image 缩略图 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&#34;og:image&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;/static/imgs/thumbnail.png&#34;</span><span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&#34;og:description&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;专注于大前端技术架构与分享，关注用户体验&#34;</span><span class="p">/&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">qsjc</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-11-08
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/2022/001/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">辞职和找房</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/2021/006/">
+            <span class="next-text nav-default">taro3.x版本使用vue2.x版本注意事项</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2021-11-08 16:03:36 \u002b0800 \u002b0800',
+        title: 'Html5的meta标签',
+        clientID: '8a2eee0576ce107588f1',
+        clientSecret: '37209f0bb49e03718d307a6d6f8a4f1c37a33d2c',
+        repo: 'qsjc.github.io',
+        owner: 'qsjc',
+        admin: ['qsjc'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/qsjc" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/317483876" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://qsjc.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>qsjc</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh-CN".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
