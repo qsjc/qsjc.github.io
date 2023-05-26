@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "6e6d63ecae44db94",
+    "type": "split",
+    "children": [
+      {
+        "id": "46092714829f3091",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "319862153b8f4a75",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ada8b1edf95162d1",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "53b20510f233f850",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "00b8192782419d31",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "7d54b00c78338ff7",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "84a21e986e834768",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "3abe5e5eb4fb4790",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "c3bff4697f7d90ef",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "e2d2be5f6c36c27c",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "bbc229126813888a",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "319862153b8f4a75",
+  "lastOpenFiles": [
+    "content/post/2023/001.md",
+    "content/post/2021/007.md",
+    "content/post/2021/006.md",
+    "content/post/2021/004.md",
+    "content/post/2021/003.md",
+    "content/post/2021/002.md",
+    "content/post/2021/001.md",
+    "content/post/2022/002.md",
+    "content/post/2022/001.md",
+    "public/index.html",
+    "public/sitemap.xml",
+    "public/post/index.html",
+    "content/tags/_index.md",
+    "themes/hugo-PaperMod/assets/css/common/footer.css",
+    "public/tags/keycode/index.html",
+    "public/tags/keycode/index.xml",
+    "public/post/index.xml",
+    "public/index.xml",
+    "public/assets/js/highlight.fcce68fcabe3cfd24486b97dfff003cba2f6bed266856e2dae8894f5a82e4c89.js",
+    "public/categories/前端/index.html",
+    "public/img/2022/004/IMG_0079.jpeg",
+    "public/img/2022/003/IMG_0069.jpeg",
+    "public/img/2022/003/IMG_0071.jpeg",
+    "public/img/2022/003/IMG_0070.jpeg",
+    "content/categories/_index.md",
+    "assets/images/avatar.jpeg",
+    "public/img/2022/004/IMG_0080.jpeg",
+    "content/post/2021/005.md",
+    "static/img/2022/004/IMG_0079.jpeg",
+    "static/img/2022/003/IMG_0069.jpeg",
+    "static/img/2022/003/IMG_0071.jpeg",
+    "static/img/2022/003/IMG_0070.jpeg",
+    "content/search.md",
+    "content/about.md",
+    "archetypes/default.md",
+    "content/post/_index.md",
+    "themes/hugo-PaperMod/README.md",
+    "README.md"
+  ]
+}
