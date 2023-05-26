@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2630fc105fc00b37",
+        "id": "d8942b3f6fce86e5",
         "type": "tabs",
         "children": [
           {
-            "id": "178da7721d0eecdf",
+            "id": "eb78cb87f294b26e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2023/002.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/post/2023/002.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "content/post/2023/002.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "content/post/2023/002.md"
+              }
             }
           },
           {
@@ -154,15 +162,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "383f14b164509f9d",
+  "active": "eb78cb87f294b26e",
   "lastOpenFiles": [
     "content/post/2023/002.md",
+    "content/post/2023/001.md",
     "archetypes/default.md",
     "content/search.md",
     "content/about.md",
     "content/post/_index.md",
     "content/categories/_index.md",
-    "content/post/2023/001.md",
     "content/post/2022/002.md",
     "content/post/2022/001.md",
     "content/post/2023"
