@@ -4,18 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "78f5d6ec71bcb39b",
+        "id": "2630fc105fc00b37",
         "type": "tabs",
         "children": [
           {
-            "id": "dad24edf52fcfe88",
+            "id": "178da7721d0eecdf",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
-              "state": {
-                "file": ".obsidian/community-plugins.json",
-                "staged": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -157,7 +154,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "dad24edf52fcfe88",
+  "active": "383f14b164509f9d",
   "lastOpenFiles": [
     "content/post/2023/002.md",
     "archetypes/default.md",
