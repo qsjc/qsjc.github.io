@@ -223,3 +223,44 @@ body {
 .post-content table td {
   /* border: 1px solid #979da3 !important; */
 }
+
+
+.entry-cover1 {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-entry {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.entry-cover {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 50%;
+  margin-bottom: unset;
+
+  max-height: 150px;
+  display: grid;
+  align-content: center;
+}
+
+.post-info {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.entry-cover1 img {
+  border-radius: var(--radius);
+  pointer-events: none;
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}

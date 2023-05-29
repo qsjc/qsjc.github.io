@@ -56,7 +56,7 @@ params:
 
   label:
     text: "猫饼"
-    icon: ""
+    icon: "/favicon.ico"
     iconHeight: 35
 
   # profile-mode
@@ -96,8 +96,8 @@ params:
   #     SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
   # editPost:
@@ -118,23 +118,23 @@ params:
 menu:
   main:
     - identifier: home
-      name: 🏠主页
+      name: 🏠 主页
       url: /
       weight: 10
-    - identifier: categories
-      name: 🧩分类
-      url: /categories/
-      weight: 20
     - identifier: tags
-      name: 🔖标签
+      name: 🔖 标签
       url: /tags/
+      weight: 20
+    - identifier: archives
+      name: ⏱️ 时间轴
+      url: /archives/
       weight: 30
     - identifier: about
-      name: 🙋🏻‍♂️关于
+      name: 🙋🏻‍♂️ 关于
       url: /about/
       weight: 40
     - identifier: search
-      name: 🔎搜索
+      name: 🔎 搜索
       url: /search/
       weight: 50
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma

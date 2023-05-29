@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2446417ad6d0b741",
+        "id": "923d85ccf16a6fc4",
         "type": "tabs",
         "children": [
           {
-            "id": "81d8b0d9e7889fab",
+            "id": "d22fc50221ba6b09",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -156,9 +156,22 @@
   },
   "active": "383f14b164509f9d",
   "lastOpenFiles": [
-    "content/post/2023/001.md",
-    "content/post/2023/002.md",
+    "content/post/2022/002-img/admin.png",
+    "content/post/2022/002-img",
+    "content/post/2023/002-img/hudieli01.jpeg",
+    "content/post/2023/002-img",
+    "content/post/2023/002/hudieli01.jpeg",
+    "content/post/2023/002",
+    "content/post/2023/img/hudieli01.jpeg",
+    "content/post/2023/img/D60064A9-8545-44F0-9CE1-25C921965F4B_1_105_c.jpeg",
+    "content/post/2023/img",
+    "themes/hugo-PaperMod/layouts/partials/cover1.html",
+    "content/archive.md",
+    "content/categories/_index.md",
+    "content/post/2023/003.md",
     "archetypes/default.md",
+    "content/post/2023/002.md",
+    "content/post/2023/001.md",
     "content/about.md",
     "content/search.md",
     "content/post/2021/007.md",
@@ -171,7 +184,6 @@
     "content/post/2022/001.md",
     "content/post/2022/002.md",
     "content/post/_index.md",
-    "content/categories/_index.md",
     "content/post/2023"
   ]
 }

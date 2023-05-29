@@ -30,6 +30,8 @@
     position: relative;
     padding: 5px;
     margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 .archive-entry-title {
@@ -41,4 +43,8 @@
 .archive-meta {
     color: var(--secondary);
     font-size: 14px;
+}
+
+.archive-entry .entry-cover {
+  max-height: 100px;
 }

@@ -4,5 +4,5 @@ layout: "search" # is necessary
 # url: "/archive"
 # description: "Description for Search"
 summary: "search"
-placeholder: "你想找啥"
+placeholder: "想找点啥"
 ---
