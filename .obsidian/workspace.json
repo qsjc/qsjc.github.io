@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9138c8117ec54305",
+        "id": "2446417ad6d0b741",
         "type": "tabs",
         "children": [
           {
-            "id": "cfa6dc457d8fdc24",
+            "id": "81d8b0d9e7889fab",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/about.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "content/about.md"
-              }
+              "state": {}
             }
           },
           {
@@ -162,12 +154,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cfa6dc457d8fdc24",
+  "active": "383f14b164509f9d",
   "lastOpenFiles": [
+    "content/post/2023/001.md",
+    "content/post/2023/002.md",
+    "archetypes/default.md",
     "content/about.md",
     "content/search.md",
-    "content/post/2023/002.md",
-    "content/post/2023/001.md",
     "content/post/2021/007.md",
     "content/post/2021/006.md",
     "content/post/2021/005.md",
@@ -177,7 +170,6 @@
     "content/post/2021/001.md",
     "content/post/2022/001.md",
     "content/post/2022/002.md",
-    "archetypes/default.md",
     "content/post/_index.md",
     "content/categories/_index.md",
     "content/post/2023"
