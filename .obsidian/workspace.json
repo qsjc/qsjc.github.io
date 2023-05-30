@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "923d85ccf16a6fc4",
+        "id": "882dcdf4c8468d10",
         "type": "tabs",
         "children": [
           {
-            "id": "d22fc50221ba6b09",
+            "id": "4611bef280048a83",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2023/004.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/post/2023/004.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "content/post/2023/004.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "content/post/2023/004.md"
+              }
             }
           },
           {
@@ -154,24 +162,37 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "383f14b164509f9d",
+  "active": "4611bef280048a83",
   "lastOpenFiles": [
-    "content/post/2022/002-img/admin.png",
-    "content/post/2022/002-img",
-    "content/post/2023/002-img/hudieli01.jpeg",
-    "content/post/2023/002-img",
-    "content/post/2023/002/hudieli01.jpeg",
-    "content/post/2023/002",
-    "content/post/2023/img/hudieli01.jpeg",
-    "content/post/2023/img/D60064A9-8545-44F0-9CE1-25C921965F4B_1_105_c.jpeg",
-    "content/post/2023/img",
-    "themes/hugo-PaperMod/layouts/partials/cover1.html",
+    "img/2023/004/heike380.jpeg.md",
+    "content/post/2023/004.md",
+    "img/2023/004",
+    "img/2023",
+    "img",
+    "content/post/2023/003.md",
+    "content/post/2022/002.md",
+    "static/img/2022/002/admin.png",
+    "static/img/2023/004/heike380.jpeg",
+    "static/img/2023/002/hudieli.jpeg",
+    "static/img/2022/002/hudieli.jpeg",
+    "static/img/2022/003/IMG_0071.jpeg",
+    "static/img/2022/003/IMG_0070.jpeg",
+    "static/img/2022/003/IMG_0069.jpeg",
+    "static/img/2022/003",
+    "static/img/2022/004/IMG_0080.jpeg",
+    "static/img/2022/004/IMG_0079.jpeg",
+    "static/img/2022/004",
+    "content/post/2023/002-img/hudieli.jpeg",
+    "static/img/2023/004",
+    "static/img/2023/002",
+    "static/img/2022/002",
+    "static/img/2023",
+    "content/post/2023/001.md",
+    "content/post/2023/002.md",
+    "content/post/2023/004-img",
     "content/archive.md",
     "content/categories/_index.md",
-    "content/post/2023/003.md",
     "archetypes/default.md",
-    "content/post/2023/002.md",
-    "content/post/2023/001.md",
     "content/about.md",
     "content/search.md",
     "content/post/2021/007.md",
@@ -182,8 +203,6 @@
     "content/post/2021/002.md",
     "content/post/2021/001.md",
     "content/post/2022/001.md",
-    "content/post/2022/002.md",
-    "content/post/_index.md",
-    "content/post/2023"
+    "content/post/_index.md"
   ]
 }
