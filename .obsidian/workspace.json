@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "882dcdf4c8468d10",
+        "id": "dc910d32bc936b3e",
         "type": "tabs",
         "children": [
           {
-            "id": "4611bef280048a83",
+            "id": "5255fe5b70727509",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/post/2023/004.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2023/004.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/post/2023/004.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "content/post/2023/004.md"
-              }
+              "state": {}
             }
           },
           {
@@ -162,10 +154,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4611bef280048a83",
+  "active": "0412ebec0d57445b",
   "lastOpenFiles": [
-    "img/2023/004/heike380.jpeg.md",
     "content/post/2023/004.md",
+    "img/2023/004/heike380.jpeg.md",
     "img/2023/004",
     "img/2023",
     "img",
