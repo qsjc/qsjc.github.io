@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dc910d32bc936b3e",
+        "id": "df44c41af373801b",
         "type": "tabs",
         "children": [
           {
-            "id": "5255fe5b70727509",
+            "id": "54b78cb6d5c1ad8a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -154,15 +154,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0412ebec0d57445b",
+  "active": "54b78cb6d5c1ad8a",
   "lastOpenFiles": [
     "content/post/2023/004.md",
+    "content/post/2023/003.md",
     "img/2023/004/heike380.jpeg.md",
     "img/2023/004",
     "img/2023",
     "img",
-    "content/post/2023/003.md",
+    "content/post/2023/002.md",
+    "content/post/2023/001.md",
     "content/post/2022/002.md",
+    "content/post/2022/001.md",
+    "archetypes/default.md",
     "static/img/2022/002/admin.png",
     "static/img/2023/004/heike380.jpeg",
     "static/img/2023/002/hudieli.jpeg",
@@ -179,12 +183,9 @@
     "static/img/2023/002",
     "static/img/2022/002",
     "static/img/2023",
-    "content/post/2023/001.md",
-    "content/post/2023/002.md",
     "content/post/2023/004-img",
     "content/archive.md",
     "content/categories/_index.md",
-    "archetypes/default.md",
     "content/about.md",
     "content/search.md",
     "content/post/2021/007.md",
@@ -194,7 +195,6 @@
     "content/post/2021/003.md",
     "content/post/2021/002.md",
     "content/post/2021/001.md",
-    "content/post/2022/001.md",
     "content/post/_index.md"
   ]
 }

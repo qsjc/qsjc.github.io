@@ -12,6 +12,6 @@ cover:
   image: "" #图片路径：posts/tech/123/123.png
   caption: "" #图片底部描述
   alt: ""
-  relative: false
+  relative: true
 ---
 
