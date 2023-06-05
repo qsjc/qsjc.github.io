@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "46092714829f3091",
+        "id": "6badb229a32c83a5",
         "type": "tabs",
         "children": [
           {
-            "id": "319862153b8f4a75",
+            "id": "84eb77e3e7e2bf7e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -123,8 +123,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "319862153b8f4a75",
+  "active": "84eb77e3e7e2bf7e",
   "lastOpenFiles": [
+    "content/post/2023/005.md",
+    "content/post/2023/004.md",
+    "themes/hugo-PaperMod/layouts/partials/cover1.html",
+    "content/post/2023/002.md",
+    "content/archive.md",
+    "content/post/2023/003.md",
+    "static/img/2023/004/heike380.jpeg",
+    "static/img/2023/002/hudieli.jpeg",
+    "static/img/2022/002/admin.png",
     "content/post/2023/001.md",
     "content/post/2021/007.md",
     "content/post/2021/006.md",
@@ -144,7 +153,6 @@
     "public/post/index.xml",
     "public/index.xml",
     "public/assets/js/highlight.fcce68fcabe3cfd24486b97dfff003cba2f6bed266856e2dae8894f5a82e4c89.js",
-    "public/categories/前端/index.html",
     "public/img/2022/004/IMG_0079.jpeg",
     "public/img/2022/003/IMG_0069.jpeg",
     "public/img/2022/003/IMG_0071.jpeg",
@@ -154,9 +162,6 @@
     "public/img/2022/004/IMG_0080.jpeg",
     "content/post/2021/005.md",
     "static/img/2022/004/IMG_0079.jpeg",
-    "static/img/2022/003/IMG_0069.jpeg",
-    "static/img/2022/003/IMG_0071.jpeg",
-    "static/img/2022/003/IMG_0070.jpeg",
     "content/search.md",
     "content/about.md",
     "archetypes/default.md",
