@@ -4,17 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "df44c41af373801b",
+        "id": "29960d6aa1fd9d0b",
         "type": "tabs",
         "children": [
           {
-            "id": "54b78cb6d5c1ad8a",
+            "id": "27fc09b99c686209",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": ".obsidian/workspace.json",
-                "staged": false
+                "file": "content/post/2023/005.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -84,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/post/2023/005.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "content/post/2023/005.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "content/post/2023/005.md"
+              }
             }
           },
           {
@@ -157,7 +162,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "54b78cb6d5c1ad8a",
+  "active": "27fc09b99c686209",
   "lastOpenFiles": [
     "content/post/2023/005.md",
     "content/post/2023/004.md",
